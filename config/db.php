@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $db = 'school_db';
-$user = 'root'; // or your MySQL username
-$pass = '';     // your MySQL password
+$user = 'root';
+$pass = '';
 
 $conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) {

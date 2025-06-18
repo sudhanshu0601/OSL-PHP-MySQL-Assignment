@@ -10,4 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!$conn->query($sql)) {
         echo "Error: " . $conn->error;
     }
+
+    header("Location: ../public/index.php");
+    exit();
 }

@@ -1,24 +1,36 @@
-<?php include '../includes/insert.php'; ?>
+<?php include '../includes/insert.php'; 
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Record System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
-         <h2>Add Student</h2>
-    <form method="POST">
-        Name: <input type="text" name="name" required><br>
-        Age: <input type="number" name="age" required><br>
-        Email: <input type="email" name="email" required><br>
-        <input type="submit" value="Add Student">
-    </form>
+        <h1>Student Record System</h1>
+        <form method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
 
-    <h2>Student List</h2>
-    <?php include '../includes/fetch.php'; ?>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <button type="submit" id="submitBtn">Add Student</button>
+
+        </form>
+        <h2>Student List</h2>
+        <?php
+        require '../includes/fetch.php';
+        ?>
     </div>
 </body>
+
 </html>
