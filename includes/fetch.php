@@ -9,8 +9,8 @@ while ($row = $result->fetch_assoc()) {
             <td>{$row['name']}</td>
             <td>{$row['age']}</td>
             <td>{$row['email']}</td>
-            <td class='fourthCol'>
-                <form method='POST' action='../includes/delete.php'>
+            <td>
+                <form method='GET' action='../includes/delete.php'>
                     <input type='hidden' name='id' value='{$row['id']}'>
                     <button type='submit' id='deleteBtn'>Delete</button>
                 </form>

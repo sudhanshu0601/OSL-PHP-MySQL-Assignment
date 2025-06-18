@@ -18,7 +18,7 @@
             <input type="text" id="name" name="name" required><br>
 
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age" required><br>
+            <input type="number" id="age" name="age" min="0" required><br>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br>
