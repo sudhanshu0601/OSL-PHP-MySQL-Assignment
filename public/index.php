@@ -26,7 +26,7 @@
             <button type="submit" id="submitBtn">Add Student</button>
 
         </form>
-        <h2>Student List</h2>
+        <hr>
         <?php
         require '../includes/fetch.php';
         ?>

@@ -10,6 +10,18 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: #555;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -26,13 +38,31 @@ label {
 }
 
 #submitBtn {
-    background-color: #28a745;
+    background-image: linear-gradient(to right, #E04125, #F28D38);
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+#submitBtn:hover {
+    background-color: #218838;
+}
+
+#deleteBtn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 7px -20px 5px 15px;
+}
+
+#deleteBtn:hover {
+    background-color: #c82333;
 }
 
 input {
@@ -60,9 +90,19 @@ th {
     border: 1px solid #ddd;
 }
 
-td:last-child,
-th:last-child {
-    border-right: none;
-    border-bottom: none;
-    border-top: none;
+td {
+    background-color: #f9f9f9;
+    word-break: break-all;
+}
+
+td:nth-child(1) {
+    width: 37%;
+}
+
+td:nth-child(2) {
+    width: 7%;
+}
+
+td:nth-child(3) {
+    width: 40%;
 }
